@@ -2,6 +2,7 @@
 require_once "Database.php";
 
 class User {
+
     public static function create($name, $email, $password, $role) {
         $db = Database::connect();
         $stmt = $db->prepare(
@@ -15,10 +16,16 @@ class User {
         ]);
     }
 
-    public static function login($email) {
+    public static function findByEmail($email) {
         $db = Database::connect();
         $stmt = $db->prepare("SELECT * FROM users WHERE email=?");
         $stmt->execute([$email]);
-        return $stmt->fetch(PDO::FETCH_ASSOC);
+        return $stmt->fetch();
+    }
+
+    public static function all() {
+        return Database::connect()
+            ->query("SELECT user_id,full_name,email,role FROM users")
+            ->fetchAll();
     }
 }

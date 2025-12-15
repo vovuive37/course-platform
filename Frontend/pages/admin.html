@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<div class="header">
+  <h2>Trang quản trị hệ thống (Admin)</h2>
+</div>
+
+<div class="container">
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <a href="#">Dashboard</a>
+    <a href="#">Quản lý người dùng</a>
+    <a href="#">Quản lý khóa học</a>
+    <a href="#">Quản lý danh mục</a>
+    <a href="#">Duyệt giảng viên</a>
+    <a href="#">Thống kê - báo cáo</a>
+    <a href="#">Cấu hình hệ thống</a>
+  </div>
+
+  <!-- CONTENT -->
+  <div class="content">
+
+    <div class="card">
+      <h3>Thống kê tổng quan</h3>
+      <p>👤 Tổng người dùng: 120</p>
+      <p>📚 Tổng khóa học: 25</p>
+      <p>🎓 Giảng viên: 10</p>
+      <p>👨‍🎓 Học viên: 110</p>
+    </div>
+
+    <div class="card">
+      <h3>Quản lý người dùng</h3>
+      <table border="1" width="100%" cellpadding="8">
+        <tr>
+          <th>Tên</th>
+          <th>Email</th>
+          <th>Vai trò</th>
+          <th>Hành động</th>
+        </tr>
+        <tr>
+          <td>Nguyễn Văn A</td>
+          <td>a@gmail.com</td>
+          <td>Student</td>
+          <td>
+            <button>Khóa</button>
+            <button>Xóa</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Trần Thị B</td>
+          <td>b@gmail.com</td>
+          <td>Instructor</td>
+          <td>
+            <button>Duyệt</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="card">
+      <h3>Quản lý khóa học</h3>
+      <p>Lập trình Web – <b>Đã duyệt</b></p>
+      <p>Python nâng cao – <b>Chờ duyệt</b></p>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>

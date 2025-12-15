@@ -1,13 +1,7 @@
 <?php
-require_once "../models/User.php";
+require_once "../services/AuthService.php";
 
 if ($_POST['action'] === 'login') {
-    $user = User::login($_POST['email']);
-    if ($user && password_verify($_POST['password'], $user['password'])) {
-        session_start();
-        $_SESSION['user'] = $user;
-        echo "success";
-    } else {
-        echo "fail";
-    }
+    $user = AuthService::login($_POST['email'], $_POST['password']);
+    echo json_encode($user ? $user : ["error" => "Login failed"]);
 }

@@ -11,3 +11,50 @@ fetch("http://localhost/e-learning-platform/backend/main.php?module=course&actio
   });
 });
 </script>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Danh sách khóa học</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<div class="header">
+  <h2>Tất cả khóa học</h2>
+</div>
+
+<div class="content">
+
+  <div class="card">
+    <h3>Bộ lọc</h3>
+    <select>
+      <option>Danh mục</option>
+      <option>Lập trình</option>
+      <option>Thiết kế</option>
+    </select>
+
+    <select>
+      <option>Mức độ</option>
+      <option>Cơ bản</option>
+      <option>Nâng cao</option>
+    </select>
+  </div>
+
+  <div class="card">
+    <h3>Lập trình Web</h3>
+    <p>Giảng viên: Nguyễn Văn A</p>
+    <p>Mức độ: Cơ bản</p>
+    <a href="course-detail.html">Xem chi tiết</a>
+  </div>
+
+  <div class="card">
+    <h3>Java OOP</h3>
+    <p>Giảng viên: Trần Thị B</p>
+    <p>Mức độ: Nâng cao</p>
+    <a href="course-detail.html">Xem chi tiết</a>
+  </div>
+
+</div>
+
+</body>
+</html>
