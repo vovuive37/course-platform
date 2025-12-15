@@ -1,0 +1,13 @@
+<h2>Danh sách khóa học</h2>
+<div id="courseList"></div>
+
+<script>
+fetch("http://localhost/e-learning-platform/backend/main.php?module=course&action=list")
+.then(res => res.json())
+.then(data => {
+  data.forEach(c => {
+    document.getElementById("courseList").innerHTML +=
+      `<p>${c.course_name}</p>`;
+  });
+});
+</script>

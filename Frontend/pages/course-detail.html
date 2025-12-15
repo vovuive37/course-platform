@@ -1,0 +1,14 @@
+<h2>Chi tiết khóa học</h2>
+<div id="detail"></div>
+
+<script>
+const id = new URLSearchParams(window.location.search).get("id");
+fetch(`http://localhost/e-learning-platform/backend/main.php?module=course&action=detail&id=${id}`)
+.then(r => r.json())
+.then(c => {
+  document.getElementById("detail").innerHTML = `
+    <h3>${c.course_name}</h3>
+    <p>${c.description}</p>
+  `;
+});
+</script>

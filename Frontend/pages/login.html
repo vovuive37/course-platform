@@ -1,0 +1,12 @@
+<form id="loginForm">
+  <input type="email" placeholder="Email" required>
+  <input type="password" placeholder="Mật khẩu" required>
+  <button>Đăng nhập</button>
+</form>
+
+<script>
+document.querySelector("form").onsubmit = async e => {
+  e.preventDefault();
+  alert("Demo đăng nhập");
+}
+</script>
