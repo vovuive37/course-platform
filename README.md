@@ -134,14 +134,14 @@ e-learning-platform/
 6. Frontend hiển thị kết quả cho người dùng
 
 
-## 8. Cơ sở dữ liệu
+Cơ sở dữ liệu
 Hệ thống sử dụng **MySQL**, gồm các bảng chính:
 - `users`
 - `courses`
 - `enrollments`
 
 
-## 9. Các bước thực hiện
+ Các bước thực hiện
 1. Phân tích yêu cầu hệ thống  
 2. Thiết kế kiến trúc và cơ sở dữ liệu  
 3. Xây dựng Backend theo mô hình MVC  
@@ -149,7 +149,4 @@ Hệ thống sử dụng **MySQL**, gồm các bảng chính:
 5. Kết nối Frontend – Backend  
 6. Kiểm thử và hoàn thiện  
 
-
-## 10. Kết luận
-Đề tài đã xây dựng thành công một nền tảng E-Learning cơ bản, đáp ứng các chức năng chính của hệ thống học trực tuyến và phù hợp với yêu cầu của môn học.
 
