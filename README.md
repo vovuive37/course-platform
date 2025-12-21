@@ -2,48 +2,41 @@
 ## XÂY DỰNG NỀN TẢNG HỌC TRỰC TUYẾN (E-LEARNING PLATFORM)
 
 
-## 1. Thông tin sinh viên
-- **Họ và tên**: Đặng Ngọc Võ  
-- **Ngành**: Công nghệ Thông tin  
-- **Trường**: Đại học Bình Dương  
-- **Môn học**: Phát triển Ứng dụng Web  
-- **Hình thức**: Đồ án cá nhân  
 
-
-## 2. Giới thiệu đề tài
+## 1. Giới thiệu đề tài
 Đề tài xây dựng một **nền tảng học trực tuyến (E-Learning Platform)** nhằm áp dụng kiến thức lập trình web, mô hình MVC và kỹ năng phát triển hệ thống Frontend – Backend.  
 Hệ thống phục vụ mục đích học tập, cho phép người dùng học và quản lý khóa học trực tuyến.
 
 
-## 3. Mục tiêu đề tài
+## 2. Mục tiêu đề tài
 - Xây dựng hệ thống E-Learning cơ bản
 - Áp dụng mô hình MVC trong Backend
 - Kết nối Frontend với Backend thông qua API
 - Quản lý dữ liệu bằng MySQL
 
 
-## 4. Công nghệ sử dụng
+## 3. Công nghệ sử dụng
 - **Backend**: PHP (MVC), MySQL  
 - **Frontend**: HTML, CSS, JavaScript  
 - **Công cụ**: VS Code, XAMPP/Laragon, GitHub  
 
 
-## 5. Tổng quan hệ thống
+## 4. Tổng quan hệ thống
 
-### 5.1. Frontend
+### 4.1. Frontend
 Frontend là phần giao diện người dùng, giúp:
 - Hiển thị trang chủ, khóa học
 - Đăng nhập, đăng ký
 - Học và quản lý khóa học theo vai trò
 
-### 5.2. Backend
+### 4.2. Backend
 Backend xử lý nghiệp vụ và dữ liệu:
 - Xác thực người dùng
 - Quản lý khóa học và người dùng
 - Cung cấp API cho Frontend
 
 
-## 6. Các chức năng chính
+## 5. Các chức năng chính
 - Đăng nhập, đăng ký người dùng
 - Phân quyền (Student, Instructor, Admin)
 - Xem danh sách và chi tiết khóa học
@@ -51,7 +44,7 @@ Backend xử lý nghiệp vụ và dữ liệu:
 - Quản lý khóa học và người dùng
 
 
-## 7. Cấu trúc thư mục
+## 6. Cấu trúc thư mục
 
 ```text
 e-learning-platform/
