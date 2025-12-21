@@ -59,7 +59,8 @@ Backend xử lý nghiệp vụ và dữ liệu:
 ---
 
 ## 7. Cấu trúc thư mục
-e-learning-platform
+
+## e-learning-platform
 │
 ├── Backend
 │ ├── controllers
