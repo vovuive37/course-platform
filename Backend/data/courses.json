@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "title": "HTML & CSS Basics",
+    "description": "Learn the basics of HTML and CSS",
+    "instructor": "Instructor A"
+  },
+  {
+    "id": 2,
+    "title": "JavaScript Fundamentals",
+    "description": "Introduction to JavaScript programming",
+    "instructor": "Instructor B"
+  }
+]

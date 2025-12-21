@@ -1,198 +1,195 @@
-## ĐỀ TÀI: XÂY DỰNG NỀN TẢNG HỌC TRỰC TUYẾN (E-LEARNING PLATFORM)
+E-Learning Platform (PHP + HTML/CSS/JS)
+📌 Giới thiệu
 
----
+Dự án E-Learning Platform là một website học trực tuyến cơ bản, cho phép:
 
-## 1. Thông tin sinh viên
+Người dùng đăng nhập
 
-- **Họ và tên**: Đặng Ngọc Võ  
-- **Ngành học**: Công nghệ Thông tin  
-- **Trường**: Đại học Bình Dương  
-- **Môn học**: Phát triển Ứng dụng Web  
-- **Hình thức**: Đồ án cá nhân  
+Học viên xem và học khóa học
 
----
+Giảng viên quản lý khóa học
 
-## 2. Giới thiệu đề tài
+Admin quản trị hệ thống
 
-Trong bối cảnh công nghệ thông tin phát triển mạnh mẽ, các hệ thống học trực tuyến (E-Learning) ngày càng đóng vai trò quan trọng trong giáo dục.  
-Đề tài **“Xây dựng nền tảng học trực tuyến (E-Learning Platform)”** được thực hiện nhằm mục đích:
+Dự án sử dụng:
 
-- Áp dụng kiến thức đã học về lập trình web
-- Hiểu rõ mô hình hoạt động của một hệ thống E-Learning
-- Rèn luyện kỹ năng xây dựng ứng dụng web theo mô hình MVC
-- Phát triển khả năng làm việc với Frontend và Backend tách biệt
+Frontend: HTML, CSS, JavaScript (Vanilla)
 
----
+Backend: PHP (MVC đơn giản)
 
-## 3. Mục tiêu đề tài
+Database: JSON (không dùng MySQL)
 
-### 3.1. Mục tiêu chung
-Xây dựng một hệ thống học trực tuyến cơ bản, cho phép người dùng đăng nhập, xem khóa học và đăng ký học.
+Môi trường chạy: XAMPP
 
-### 3.2. Mục tiêu cụ thể
-- Xây dựng backend bằng PHP theo mô hình MVC
-- Xây dựng giao diện frontend bằng HTML, CSS, JavaScript
-- Kết nối cơ sở dữ liệu MySQL
-- Thực hiện các chức năng cơ bản của hệ thống E-Learning
+🧩 Công nghệ sử dụng
+Frontend
 
----
+HTML5
 
-## 4. Phạm vi và đối tượng sử dụng
+CSS3
 
-### 4.1. Đối tượng sử dụng
-- Sinh viên (Student)
-- Giảng viên (Instructor)
-- Quản trị viên (Admin)
+JavaScript (ES6)
 
-### 4.2. Phạm vi
-- Hệ thống ở mức cơ bản
-- Phục vụ mục đích học tập và nghiên cứu
-- Chưa triển khai các chức năng nâng cao như thanh toán, video streaming
+Animation + icon cơ bản
 
----
+Backend
 
-## 5. Công nghệ sử dụng
+PHP 8+
 
-### 5.1. Backend
-- Ngôn ngữ: **PHP**
-- Kiến trúc: **MVC (Model – View – Controller)**
-- Cơ sở dữ liệu: **MySQL**
+REST API đơn giản
 
-### 5.2. Frontend
-- HTML5
-- CSS3
-- JavaScript (Fetch API)
+JSON làm nơi lưu trữ dữ liệu
 
-### 5.3. Công cụ hỗ trợ
-- Visual Studio Code
-- XAMPP / Laragon
-- GitHub
+Mô hình Controller
 
----
-
-## 6. Phân tích hệ thống
-
-### 6.1. Chức năng chính
-- Đăng nhập / đăng ký người dùng
-- Xem danh sách khóa học
-- Xem chi tiết khóa học
-- Đăng ký học khóa học
-- Phân quyền người dùng theo vai trò
-
-### 6.2. Phân quyền
-- **Student**: xem và đăng ký khóa học
-- **Instructor**: quản lý khóa học
-- **Admin**: quản lý người dùng và hệ thống
-
----
-
-## 7. Cấu trúc thư mục
-
-e-learning-platform
+📁 Cấu trúc thư mục
+e-learning-platform/
 │
-├── Backend
-│ ├── controllers
-│ │ ├── AuthController.php
-│ │ ├── CourseController.php
-│ │ └── UserController.php
-│ │
-│ ├── models
-│ │ ├── Database.php
-│ │ ├── User.php
-│ │ ├── Course.php
-│ │ └── Enrollment.php
-│ │
-│ ├── routes
-│ │ └── api.php
-│ │
-│ ├── services
-│ │ └── AuthService.php
-│ │
-│ └── main.php
+├── Frontend/
+│   ├── assets/
+│   │   ├── css/
+│   │   │   └── style.css
+│   │   ├── js/
+│   │   │   └── main.js
+│   │   └── images/
+│   │
+│   └── pages/
+│       ├── home.html
+│       ├── login.html
+│       ├── courses.html
+│       ├── course-detail.html
+│       ├── learning.html
+│       ├── student.html
+│       ├── instructor.html
+│       └── admin.html
 │
-├── Frontend
-│ ├── assets
-│ │ ├── css
-│ │ ├── js
-│ │ └── images
-│ │
-│ └── pages
-│ ├── home.html
-│ ├── login.html
-│ ├── courses.html
-│ ├── course-detail.html
-│ ├── learning.html
-│ ├── student.html
-│ ├── instructor.html
-│ └── admin.html
+├── Backend/
+│   ├── api/
+│   │   ├── login.php
+│   │   └── courses.php
+│   │
+│   ├── controllers/
+│   │   ├── AuthController.php
+│   │   ├── UserController.php
+│   │   └── CourseController.php
+│   │
+│   ├── data/
+│   │   ├── users.json
+│   │   └── courses.json
+│   │
+│   ├── index.php
+│   └── main.php
 │
-├── database
-│ └── elearning.sql
+├── .vscode/
+│   └── settings.json
 │
 └── README.md
 
-## 8. Cơ sở dữ liệu
+⚙️ Cài đặt & Chạy dự án
+1️⃣ Cài đặt XAMPP
 
-Hệ thống sử dụng cơ sở dữ liệu **MySQL**, gồm các bảng chính:
-- `users`: lưu thông tin người dùng
-- `courses`: lưu thông tin khóa học
-- `enrollments`: lưu thông tin đăng ký khóa học
+Tải XAMPP tại: https://www.apachefriends.org
 
-File SQL được cung cấp tại:
-database/elearning.sql
+Cài đặt và bật:
 
-less
-Sao chép mã
+Apache
 
----
+2️⃣ Đưa project vào XAMPP
 
-## 9. Hướng dẫn cài đặt và chạy chương trình
+Giải nén project vào thư mục:
 
-### Bước 1: Cài đặt môi trường
-- Cài đặt XAMPP hoặc Laragon
-- Bật Apache và MySQL
+xampp/htdocs/
 
-### Bước 2: Import cơ sở dữ liệu
-- Tạo database tên `elearning`
-- Import file `elearning.sql`
 
-### Bước 3: Chạy chương trình
-- Đặt project vào thư mục `htdocs`
-- Truy cập:
+Đường dẫn đầy đủ:
+
+xampp/htdocs/e-learning-platform
+
+3️⃣ Chạy dự án
+
+Mở trình duyệt và truy cập:
+
 http://localhost/e-learning-platform/Frontend/pages/home.html
 
-yaml
-Sao chép mã
+🔐 Tài khoản mẫu
 
----
+Dữ liệu nằm trong file:
 
-## 10. Kết quả đạt được
+Backend/data/users.json
 
-- Hoàn thành hệ thống E-Learning cơ bản
-- Áp dụng thành công mô hình MVC
-- Hiểu rõ cách kết nối Frontend – Backend – Database
-- Giao diện rõ ràng, dễ sử dụng
 
----
+Ví dụ:
 
-## 11. Hướng phát triển
+{
+  "username": "admin",
+  "password": "123456",
+  "role": "admin"
+}
 
-- Tích hợp video bài giảng
-- Theo dõi tiến độ học tập
-- Bổ sung thanh toán khóa học
-- Cải thiện giao diện người dùng
+Vai trò	Quyền
+Admin	Quản lý hệ thống
+Instructor	Quản lý khóa học
+Student	Học khóa học
+🔄 Luồng hoạt động
 
----
+Người dùng đăng nhập (login.html)
 
-## 12. Kết luận
+Frontend gửi request đến:
 
-Đề tài đã giúp sinh viên củng cố kiến thức về lập trình web, cơ sở dữ liệu và kiến trúc MVC.  
-Mặc dù hệ thống còn đơn giản, nhưng đã đáp ứng được các chức năng cơ bản của một nền tảng học trực tuyến.
+Backend/api/login.php
 
----
 
-## 13. Tài liệu tham khảo
+Backend kiểm tra users.json
 
-1. PHP Documentation – https://www.php.net  
-2. MySQL Documentation – https://dev.mysql.com  
-3. MDN Web Docs – https://developer.mozilla.org  
+Trả kết quả đăng nhập
+
+Chuyển giao diện theo role:
+
+Admin → admin.html
+
+Instructor → instructor.html
+
+Student → student.html
+
+📡 API Backend
+🔹 Đăng nhập
+POST /Backend/api/login.php
+
+
+Request
+
+{
+  "username": "admin",
+  "password": "123456"
+}
+
+🔹 Lấy danh sách khóa học
+GET /Backend/api/courses.php
+
+🎨 Giao diện
+
+Responsive cơ bản
+
+Có icon + animation
+
+Màu sắc thống nhất trong style.css
+
+🚀 Hướng phát triển thêm
+
+Kết nối MySQL
+
+Phân quyền bằng session
+
+Upload video khóa học
+
+Thêm chứng chỉ hoàn thành
+
+Thêm bảo mật JWT
+
+👨‍💻 Tác giả
+
+Ngọc Võ Đặng
+
+Sinh viên / Lập trình Web
+
+Dự án phục vụ học tập & demo
