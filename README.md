@@ -131,11 +131,6 @@ e-learning-platform
 │
 └── README.md
 
-less
-Sao chép mã
-
----
-
 ## 8. Cơ sở dữ liệu
 
 Hệ thống sử dụng cơ sở dữ liệu **MySQL**, gồm các bảng chính:
